@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Covid-19 Tracker</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel='icon' href='v.ico' type='image/x-icon'/>
+    <link href="//db.onlinewebfonts.com/c/bd317adf74e5e7e564eb61ce9926cc6d?family=Gotham" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/9a2bc11be56851dde98c1b49302cc21a?family=Gotham+Medium" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/0923ee644c97a87d70269aa80a6f1e79?family=The+Historia+Demo" rel="stylesheet" type="text/css"/>
+    <meta name="google-site-verification" content="9P7lBLkCpxEcZAig0uq5LQzN-YUIhlLA37V1Gj3avcg" />
+</head>
+
+<body>
+    <header>
+            <div class="left-Covid" >
+                <img src="images/Covid-img-left.jpg" alt="" >
+            </div>
+            <div class="left-Down-Covid" >
+                <img src="images/Covid-19-image-down-left.jpg" alt="" >
+            </div>
+            <div class="Right-Covid" >
+                <img src="images/Covid-img.jpg" alt="" >
+            </div>
+        <div class="menu-toggler">
+            <div class="bar half start"></div>
+            <div class="bar"></div>
+            <div class="bar half end"></div>
+        </div>
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html" class="nav-link">Home</a>
+
+                </li>
+                <li>
+                    <a href="#about" class="nav-link">About</a>
+
+                </li>
+                <li>
+                    <a href="#livestatus" class="nav-link">Live Status</a>
+
+                </li>
+                <li>
+                    <a href="#symptom" class="nav-link">Symptom</a>
+
+                </li>
+                <li>
+                    <a href="#prevention" class="nav-link">prevention</a>
+
+                </li>
+                <li>
+                    <a href="#treatments" class="nav-link">Treatments</a>
+
+                </li>
+               
+            </ul>
+        </nav>
+        <div class="landing-text">
+           
+           
+            <h1>Covid-19 Tracker</h1>
+            <h6>STAY HOME,STAY SAFE</h6>
+            <div class="scrolldown">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+    </header>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="Covid-img" >
+                <img src="images/Covid-about-img.jpg"  data-aos="fade-up" data-aos-delay="300ms">  
+            </div>
+            <div class="skills-img" >
+                <img src="images/blackball.svg" alt="" >
+            </div>
+            
+            <div class="about-details" data-aos="fade-up" data-aos-delay="300ms" >
+                <div class="about-heading">
+                    <h1>About</h1>
+                    <h6>Covid-19</h6>
+                </div>
+                <br>
+                <h3>What is COVID-19(Corona-Virus)</h3>
+                <br>
+                <p>
+                    Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.<br>
+                    Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and 
+                    recover without requiring special treatment.  Older people, and those with underlying medical problems like 
+                    cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.<br>
+                    The best way to prevent and slow down transmission is to be well informed about the COVID-19 virus, the disease it 
+                    causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based 
+                    rub frequently and not touching your face. <br>   
+                    The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person 
+                    coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a 
+                    flexed elbow).  
+                    <br> 
+                    <br>               
+                </p>
+                <br>
+            </div>     
+        </div>
+    </section>
+
+    <section class="livestatus" id="livestatus" >       
+        <div class="container">
+            <div class="section-heading" >
+                <h1>COVID 19 Live Status</h1>
+                <h6>covid 19 live status list worldwide</h6>
+            </div>
+            <div class="about-details" data-aos="fade-up" data-aos-delay="300ms" >
+            <main>
+                <div class="stats">
+                  <div class="latest-report">
+                    <div class="country">
+                      <div class="name">Loading...</div>
+                      <div class="change-country">Search</div>
+                      <div class="search-country hide">
+                        <div class="search-box">
+                          <input
+                            type="text"
+                            id="search-input"
+                            placeholder="Search Country..."
+                          />
+                          <img class="close" src="./img/close.svg" alt="" />
+                        </div>
+                        <div class="country-list"></div>
+                      </div>
+                    </div>
+                    <div class="total-cases">
+                      <div class="title">Total Cases</div>
+                      <div class="value">0</div>
+                      <div class="new-value">+0</div>
+                    </div>
+                    <div class="recovered">
+                      <div class="title">Recovered</div>
+                      <div class="value">0</div>
+                      <div class="new-value">+0</div>
+                    </div>
+                    <div class="deaths">
+                      <div class="title">Deaths</div>
+                      <div class="value">0</div>
+                      <div class="new-value">+0</div>
+                    </div>
+                  </div>
+                  <div class="chart">
+                    <canvas id="axes_line_chart"></canvas>
+                  </div>
+                </div>
+              </main>
+              </div>
+        </div>
+    </section>        
+
+    <section class="symptom" id="symptom" >
+        
+        <div class="container">
+            <div class="services-img" >
+                <img src="images/Rectangle 5651.svg" alt="" >
+            </div>
+            <div class="section-heading" >
+                <h1>COVID 19 Symptoms</h1>
+                <h6>COVID-19 affects different people in different ways</h6>
+            </div>
+          
+            <div class="covid-symptoms" data-aos="fade-right" data-aos-delay="100ms">
+                <div class="symptoms"  data-date="COVID 19" data-aos="fade-right" data-aos-delay="300ms">
+          
+                    <h3>Most common symptoms</h3>
+                    <ul>
+                        <li>fever</li>
+                        <li>dry cough</li>
+                        <li>tiredness</li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="symptoms" data-date="COVID 19" data-aos="fade-right" data-aos-delay="600ms">
+                
+                    <h3>Less common symptoms</h3>
+                    <ul>
+                        <li>aches and pains</li>
+                        <li>sore throat</li>
+                        <li>conjunctivitis</li>
+                        <li>headache</li>
+                        <li>loss of taste or smell</li>
+                        <li>a rash on skin, or discolouration of fingers or toes</li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="symptoms" data-date="COVID 19" data-aos="fade-right" data-aos-delay="900ms">
+
+                    <h3>Serious symptoms</h3>
+                    <ul>
+                        <li>difficulty breathing or shortness of breath</li>
+                        <li>chest pain or pressure</li>
+                        <li>loss of speech or movement</li>
+                    </ul>
+                    <br>
+                </div>
+                 
+            </div>
+           
+            </div>
+        </div>
+    </section>
+
+    <section class="prevention" id="prevention">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Prevention</h1>
+                <h6>8 Steps Prevention Against Coronavirus</h6>
+            </div>
+            <div class="prevention-item" data-aos="fade-in" data-aos-duration="300ms">
+                <div class="prevention-img has-margin-right">
+                    <img src="images/Vaccine.jpg" alt="">
+                </div>
+                <div class="prevention-description">
+                    <h1>Get Vaccinated</h1>
+                    <p>
+                        Authorized COVID-19 vaccines can help protect you from COVID-19.
+                        You should get a COVID-19 vaccine when it is available to you.
+                        Once you are fully vaccinated, you may be able to start doing some things that you had stopped doing because of the pandemic.  
+                    </p>
+                </div>
+            </div>
+            <div class="prevention-item" data-aos="fade-in" data-aos-duration="300ms">
+                <div class="prevention-description has-margin-right">
+                    <h1>Wear a mask</h1>
+                    <p>
+                        Everyone 2 years and older should wear masks in public.
+                        Masks should be worn in addition to staying at least 6 feet apart, especially around people who don’t live with you.
+                        If someone in your household is infected, people in the household should take precautions including wearing masks to avoid spread to others.
+                        Wash your hands or use hand sanitizer before putting on your mask.
+                        Wear your mask over your nose and mouth and secure it under your chin.
+                        Fit the mask snugly against the sides of your face, slipping the loops over your ears or tying the strings behind your head.
+                        If you have to continually adjust your mask, it doesn’t fit properly, and you might need to find a different mask type or brand.
+                        Make sure you can breathe easily.
+                    </p>
+                </div>
+                <div class="prevention-img has-margin-left">
+                    <img src="images/mask.jpg" alt="">
+                </div>
+            </div>
+            <div class="prevention-item" data-aos="fade-in" data-aos-duration="300ms">
+                <div class="prevention-img has-margin-right">
+                    <img src="images/social-distancing-hero.jpg" alt="">
+                </div>
+                <div class="prevention-description">
+                    <h1>Stay 6 feet away from others</h1>
+                    <p>
+                        inside your home: Avoid close contact with people who are sick.
+                        If possible, maintain 6 feet between the person who is sick and other household members.
+                        Outside your home: Put 6 feet of distance between yourself and people who don’t live in your household.
+                        Remember that some people without symptoms may be able to spread virus.
+                        Stay at least 6 feet (about 2 arm lengths) from other people.
+                        Keeping distance from others is especially important for people who are at higher risk of getting very sick. 
+                    </p>
+                </div>
+            </div>
+            <div class="prevention-item" data-aos="fade-in" data-aos-duration="300ms">
+                <div class="prevention-description has-margin-right">
+                    <h1>Avoid crowds and poorly ventilated spaces</h1>
+                    <p>
+                        Being in crowds like in restaurants, bars, fitness centers, or movie theaters puts you at higher risk for COVID-19.
+                        Avoid indoor spaces that do not offer fresh air from the outdoors as much as possible.
+                        If indoors, bring in fresh air by opening windows and doors, if possible.
+                    </p>
+                </div>
+                <div class="prevention-img has-margin-left">
+                    <img src="images/avoid.png" alt="">
+                </div>
+            </div>
+            <div class="prevention-item" data-aos="fade-in" data-aos-duration="300ms">
+                <div class="prevention-img has-margin-right">
+                    <img src="images/hand.jpg" alt="">
+                </div>
+                <div class="prevention-description">
+                    <h1>Wash your hands often</h1>
+                    <p>
+                        Wash your hands often with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.
+                        It’s especially important to wash:
+                        Before eating or preparing food
+                        Before touching your face
+                        After using the restroom
+                        After leaving a public place
+                        After blowing your nose, coughing, or sneezing
+                        After handling your mask
+                        After changing a diaper
+                        After caring for someone sick
+                        After touching animals or pets
+                        If soap and water are not readily available, use a hand sanitizer that contains at least 60% alcohol. Cover all surfaces of your hands and rub them together until they feel dry.
+                        Avoid touching your eyes, nose, and mouth with unwashed hands.
+                    </p>
+                </div>
+            </div>
+            <div class="prevention-item" data-aos="fade-in" data-aos-duration="300ms">
+                <div class="prevention-description has-margin-right">
+                    <h1>Cover coughs and sneezes</h1>
+                    <p>
+                        Always cover your mouth and nose with a tissue when you cough or sneeze or use the inside of your elbow and do not spit.
+                        Throw used tissues in the trash.
+                        Immediately wash your hands with soap and water for at least 20 seconds. If soap and water are not readily available, clean your hands with a hand sanitizer that contains at least 60% alcohol.
+                    </p>
+                </div>
+                <div class="prevention-img has-margin-left">
+                    <img src="images/Hub_CoughEtiquette_Social.jpg" alt="">
+                </div>
+            </div>
+            <div class="prevention-item" data-aos="fade-in" data-aos-duration="300ms">
+                <div class="prevention-img has-margin-right">
+                    <img src="images/clean.jpg" alt="">
+                </div>
+                <div class="prevention-description">
+                    <h1>Clean and disinfect</h1>
+                    <p>
+                        Clean AND disinfect frequently touched surfaces daily. This includes tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.
+                        If surfaces are dirty, clean them. Use detergent or soap and water prior to disinfection.
+                        Then, use a household disinfectant. Use products from EPA’s List N: Disinfectants for Coronavirus (COVID-19)external icon according to manufacturer’s labeled directions.
+                    </p>
+                </div>
+            </div>
+            <div class="prevention-item" data-aos="fade-in" data-aos-duration="300ms">
+                <div class="prevention-description has-margin-right">
+                    <h1>Monitor Your Health Daily</h1>
+                    <p>
+                        Be alert for symptoms. Watch for fever, cough, shortness of breath, or other symptoms of COVID-19.
+                        Especially important if you are running essential errands, going into the office or workplace, and in settings where it may be difficult to keep a physical distance of 6 feet.
+                        Take your temperature if symptoms develop.
+                        Don’t take your temperature within 30 minutes of exercising or after taking medications that could lower your temperature, like acetaminophen.
+                        Follow CDC guidance if symptoms develop.
+                    </p>
+                </div>
+                <div class="prevention-img has-margin-left">
+                    <img src="images/moniter.jpg" alt="">
+                </div>
+            </div>
+            <div class="experience-img" >
+                <img src="images/Doctor2.jpg" alt="" >
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="treatments" id="treatments">
+        <div class="container" >
+            <div class="section-heading">
+                <h1>Treatments</h1>
+                <h6>Coronavirus (COVID-19) Treatment</h6>
+            </div>
+            <div class="treatmentline" >
+                <ul class="inner">
+                    <li class="date" data-date="COVID-19" data-aos="fade-up" data-aos-duration="300ms">
+                        <h1>Self-care</h1>
+                        <p>
+                            After exposure to someone who has COVID-19, do the following:
+                            <ul class="inner-text">
+                                <li>Call your health care provider or COVID-19 hotline to find out where and when to get a test.</li>
+                                <li>Cooperate with contact-tracing procedures to stop the spread of the virus.</li>
+                                <li>If testing is not available, stay home and away from others for 14 days.</li>
+                                <li>While you are in quarantine, do not go to work, to school or to public places. Ask someone to bring you supplies.</li>
+                                <li>Keep at least a 1-metre distance from others, even from your family members.</li>
+                                <li>Wear a medical mask to protect others, including if/when you need to seek medical care.</li>
+                                <li>Clean your hands frequently.</li>
+                                <li>Stay in a separate room from other family members, and if not possible, wear a medical mask.</li>
+                                <li>Keep the room well-ventilated.</li>
+                                <li>If you share a room, place beds at least 1 metre apart.</li>
+                                <li>Monitor yourself for any symptoms for 14 days.</li>
+                                <li>Call your health care provider immediately if you have any of these danger signs: difficulty breathing, loss of speech or mobility, confusion or chest pain.</li>
+                                <li>Stay positive by keeping in touch with loved ones by phone or online, and by exercising at home.</li>
+                            </ul>
+                            </p>
+                        <br>
+                    </li>
+                    <li class="date" data-date="COVID-19" data-aos="fade-up" data-aos-duration="300ms">
+                        <h1>Medical treatments</h1>
+                        <p>
+                            Scientists around the world are working to find and develop treatments for COVID-19.
+                            <ul class="inner-text">
+                                <li>Optimal supportive care includes oxygen for severely ill patients and those who are at risk for severe disease and more advanced respiratory support such as ventilation for patients who are critically ill.</li>
+                                <li>Dexamethasone is a corticosteroid that can help reduce the length of time on a ventilator and save lives of patients with severe and critical illness.</li>
+                            </ul>
+                            <br>
+                        </p>
+                        <p> WHO does not recommend self-medication with any medicines, including antibiotics, as a prevention or cure for COVID-19.</p>
+                        <br>
+                    </li>
+                    <li class="date" data-date="COVID-19" data-aos="fade-up" data-aos-duration="300ms">
+                        <h1>COVID-19 Vaccins</h1>
+                        <p></p>
+                        <br>
+                    </li>
+                </ul>
+                <div class="contact-img" >
+                    <img src="images/Group 1956.svg" alt="" >
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer class="copyright">
+        <div class="up" id="up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <p>&copy; 2021 Vivek Mandani</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./JavaScriptFile/main.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      language="JavaScript"
+      src="http://www.geoplugin.net/javascript.gp"
+      type="text/javascript"
+    ></script>
+    <script src="./JavaScriptFile/countries.js"></script>
+    <script src="./JavaScriptFile/livestatus.js"></script>
+</body>
+
+</html>
